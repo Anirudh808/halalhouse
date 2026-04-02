@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from 'react-router';
-import { Settings, Play, ChevronDown, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 const ROUTES = [
   { path: '/login', label: 'login' },

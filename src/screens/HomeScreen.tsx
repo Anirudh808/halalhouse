@@ -2,7 +2,7 @@
 import { Utensils, ShoppingBag, QrCode, Award, User } from 'lucide-react';
 import { currentUser } from '../data/mockData';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { packed, roastedVegetableSalad } from '../data/images';
+import { packed } from '../data/images';
 
 export function HomeScreen() {
   const navigate = (path: string) => console.log('Showcase navigate to', path);

@@ -1,6 +1,11 @@
 // Mock Data for HalalHouse MVP
 
-import { logo, roastedVegetableSalad, traditionalGazpacho, vegetableMedley, packed } from "./images";
+import { 
+	roastedVegetableSalad, 
+	packed, 
+	traditionalGazpacho, 
+	vegetableMedley 
+} from "./images";
 
 export interface User {
   id: string;
