@@ -17,13 +17,13 @@ export function SplashScreen() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-emerald-900/60 backdrop-blur-[2px] transition-colors duration-300 dark:bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] transition-colors duration-300 dark:bg-black"></div>
       </div>
 
       <div className="relative z-10 text-center px-6">
         <div className="flex items-center justify-center mb-8">
           <div className="relative">
-            <div className="absolute inset-0 bg-emerald-400 blur-2xl opacity-20 rounded-full animate-pulse"></div>
+            <div className="absolute inset-0 bg-[#bf9906] blur-2xl opacity-20 rounded-full animate-pulse"></div>
             <img 
               src={logo} 
               alt="HalalHouse Logo" 
@@ -39,8 +39,8 @@ export function SplashScreen() {
         <div className="space-y-3 mt-10">
           <p className="text-white/90 text-xl font-light transform transition-all duration-500 delay-100 hover:scale-105">Eat it fresh.</p>
           <p className="text-white/90 text-xl font-light transform transition-all duration-500 delay-200 hover:scale-105">Buy it packaged.</p>
-          <div className="pt-2">
-            <span className="bg-emerald-500/30 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-white font-semibold text-lg drop-shadow-md">
+          <div className="pt-4">
+            <span className="bg-heading-gold backdrop-blur-md px-6 py-2 rounded-full border border-white/10 text-black font-black text-lg shadow-2xl uppercase tracking-[0.2em] italic">
               Verify it halal.
             </span>
           </div>
