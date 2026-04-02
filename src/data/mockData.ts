@@ -12,6 +12,8 @@ export interface User {
   phone: string;
   name: string;
   points: number;
+  email?: string;
+  avatar?: string;
 }
 
 export interface Product {
@@ -71,6 +73,8 @@ export const currentUser: User = {
   phone: '+34612345678',
   name: 'Ahmed Hassan',
   points: 120,
+  email: 'ahmed.hassan@halalhouse.tv',
+  avatar: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&q=80',
 };
 
 // Mock Restaurant Products
