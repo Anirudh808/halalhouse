@@ -117,7 +117,7 @@ export function LoginScreen() {
                       <InputOTPSlot 
                         key={index} 
                         index={index} 
-                        className="w-14 h-20 rounded-[22px] border-2 border-border/50 dark:border-neutral-900 bg-card dark:bg-black text-foreground dark:text-heading-gold font-black text-3xl flex items-center justify-center transition-all focus:border-heading-gold focus:ring-[12px] focus:ring-heading-gold/5 shadow-inner italic"
+                        className="w-12 h-16 rounded-[22px] border-2 border-border/50 dark:border-neutral-900 bg-card dark:bg-black text-foreground dark:text-heading-gold font-black text-2xl flex items-center justify-center transition-all focus:border-heading-gold focus:ring-[12px] focus:ring-heading-gold/5 shadow-inner italic"
                       />
                     ))}
                   </InputOTPGroup>
