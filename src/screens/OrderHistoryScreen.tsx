@@ -76,7 +76,7 @@ export function OrderHistoryScreen() {
             <h2 className="text-3xl font-black text-foreground dark:text-white mb-4 tracking-tighter uppercase transition-colors">
               No records found
             </h2>
-            <p className="text-muted-foreground dark:text-muted-foreground font-bold mb-12 max-w-xs mx-auto italic uppercase text-[10px] tracking-widest opacity-80 leading-relaxed">
+            <p className="text-muted-foreground dark:text-muted-foreground font-bold mb-12 max-w-xs mx-auto  uppercase text-[10px] tracking-widest opacity-80 leading-relaxed">
               Your future culinary activations will be archived here in the
               secure ledger.
             </p>
@@ -136,14 +136,14 @@ export function OrderHistoryScreen() {
                         className="flex justify-between text-sm transition-all duration-300"
                       >
                         <span className="text-foreground/80 dark:text-neutral-300 font-bold flex items-center gap-4 transition-colors">
-                          <span className="bg-accent/50 dark:bg-neutral-900 text-foreground dark:text-heading-gold w-8 h-8 flex items-center justify-center rounded-xl font-black text-[11px] border border-border/5 dark:border-neutral-800 italic transition-colors shadow-inner">
+                          <span className="bg-accent/50 dark:bg-neutral-900 text-foreground dark:text-heading-gold w-8 h-8 flex items-center justify-center rounded-xl font-black text-[11px] border border-border/5 dark:border-neutral-800  transition-colors shadow-inner">
                             {item.quantity}
                           </span>
-                          <span className="uppercase tracking-tight italic opacity-90">
+                          <span className="uppercase tracking-tight  opacity-90">
                             {getProductName(item.productId)}
                           </span>
                         </span>
-                        <span className="text-foreground dark:text-white font-black tracking-tighter text-base italic transition-colors">
+                        <span className="text-foreground dark:text-white font-black tracking-tighter text-base  transition-colors">
                           €{(item.price * item.quantity).toFixed(2)}
                         </span>
                       </div>
@@ -151,7 +151,7 @@ export function OrderHistoryScreen() {
                   </div>
 
                   <div className="flex items-center justify-between pt-8 border-t border-dashed border-border/30 dark:border-neutral-900 opacity-80">
-                    <div className="flex items-center gap-3 text-[10px] font-black text-muted-foreground dark:text-muted-foreground uppercase tracking-[0.3em] bg-accent/30 dark:bg-neutral-900/50 px-5 py-2.5 rounded-2xl italic transition-colors">
+                    <div className="flex items-center gap-3 text-[10px] font-black text-muted-foreground dark:text-muted-foreground uppercase tracking-[0.3em] bg-accent/30 dark:bg-neutral-900/50 px-5 py-2.5 rounded-2xl  transition-colors">
                       <Clock className="w-4 h-4 text-heading-gold" />
                       <span>{order.pickupTime}</span>
                     </div>

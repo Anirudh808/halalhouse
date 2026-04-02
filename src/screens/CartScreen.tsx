@@ -39,7 +39,7 @@ export function CartScreen() {
               <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
             </button>
             <div>
-              <h1 className="text-2xl font-black tracking-tighter uppercase italic">Cart Hub</h1>
+              <h1 className="text-2xl font-black tracking-tighter uppercase ">Cart Hub</h1>
               <p className="text-muted-foreground dark:text-neutral-500 text-[10px] font-black uppercase tracking-[0.2em] opacity-80 transition-colors">Order Preparation Ledger</p>
             </div>
           </div>
@@ -51,13 +51,13 @@ export function CartScreen() {
               <ShoppingBag className="w-24 h-24 text-emerald-600/20 dark:text-heading-gold/10 drop-shadow-2xl" />
             </div>
           </div>
-          <h2 className="text-4xl font-black text-foreground dark:text-white mb-4 tracking-tighter uppercase italic transition-colors">Hub record empty</h2>
-          <p className="text-muted-foreground dark:text-neutral-500 mb-12 font-bold leading-relaxed max-w-xs mx-auto uppercase text-[10px] tracking-widest italic opacity-80">
+          <h2 className="text-4xl font-black text-foreground dark:text-white mb-4 tracking-tighter uppercase  transition-colors">Hub record empty</h2>
+          <p className="text-muted-foreground dark:text-neutral-500 mb-12 font-bold leading-relaxed max-w-xs mx-auto uppercase text-[10px] tracking-widest  opacity-80">
             Sovereign fulfillment awaits. Initialize your order stream with our premium halal selections.
           </p>
           <Button
             onClick={() => navigate('/restaurant')}
-            className="bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 h-18 px-12 rounded-[28px] text-lg font-black shadow-2xl active:scale-95 transition-all text-white dark:text-black uppercase tracking-[0.2em] border-2 border-white/5 italic"
+            className="bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 h-18 px-12 rounded-[28px] text-lg font-black shadow-2xl active:scale-95 transition-all text-white dark:text-black uppercase tracking-[0.2em] border-2 border-white/5 "
           >
             Access Menu Stream
           </Button>
@@ -78,7 +78,7 @@ export function CartScreen() {
             <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
           </button>
           <div>
-            <h1 className="text-2xl font-black tracking-tighter uppercase italic">Cart Hub</h1>
+            <h1 className="text-2xl font-black tracking-tighter uppercase ">Cart Hub</h1>
             <p className="text-muted-foreground dark:text-neutral-500 text-[10px] font-black uppercase tracking-[0.2em] opacity-80 transition-colors">Reviewing Active Protocol</p>
           </div>
         </div>
@@ -88,14 +88,14 @@ export function CartScreen() {
       <div className="px-6 py-10 space-y-6">
         <div className="flex items-center gap-4 mb-4 ml-4 opacity-70">
            <div className="h-1 w-10 bg-emerald-600 dark:bg-heading-gold rounded-full"></div>
-           <p className="text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.4em] italic transition-colors">Fulfilment Stream</p>
+           <p className="text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.4em]  transition-colors">Fulfilment Stream</p>
         </div>
         {restaurantCart.map((item) => (
           <div key={item.product.id} className="bg-card dark:bg-neutral-950 rounded-[40px] p-7 shadow-sm border border-border/50 dark:border-neutral-900 hover:shadow-2xl transition-all duration-500 group">
             <div className="flex items-start gap-6">
               <div className="flex-1">
-                <h3 className="font-black text-foreground dark:text-white text-xl mb-1 tracking-tighter uppercase italic transition-colors">{item.product.name}</h3>
-                <p className="text-emerald-600 dark:text-heading-gold text-xs font-black mb-6 uppercase tracking-widest italic transition-colors">
+                <h3 className="font-black text-foreground dark:text-white text-xl mb-1 tracking-tighter uppercase  transition-colors">{item.product.name}</h3>
+                <p className="text-emerald-600 dark:text-heading-gold text-xs font-black mb-6 uppercase tracking-widest  transition-colors">
                   €{item.product.price.toFixed(2)} unit
                 </p>
                 <div className="flex items-center gap-6">
@@ -129,7 +129,7 @@ export function CartScreen() {
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-black text-foreground dark:text-white text-2xl tracking-tighter italic transition-colors">
+                <p className="font-black text-foreground dark:text-white text-2xl tracking-tighter  transition-colors">
                   €{(item.product.price * item.quantity).toFixed(2)}
                 </p>
               </div>
@@ -146,7 +146,7 @@ export function CartScreen() {
               <Clock className="w-7 h-7 text-emerald-600 dark:text-heading-gold" />
             </div>
             <div>
-               <h3 className="font-black text-foreground dark:text-white tracking-tighter text-xl uppercase italic transition-colors">Pickup Schedule</h3>
+               <h3 className="font-black text-foreground dark:text-white tracking-tighter text-xl uppercase  transition-colors">Pickup Schedule</h3>
                <p className="text-[10px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.3em] opacity-60">Synchronize Protocol</p>
             </div>
           </div>
@@ -155,7 +155,7 @@ export function CartScreen() {
               <button
                 key={option}
                 onClick={() => setPickupTime(option)}
-                className={`px-6 py-3.5 rounded-[18px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 transform active:scale-95 border italic ${
+                className={`px-6 py-3.5 rounded-[18px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 transform active:scale-95 border  ${
                   pickupTime === option
                     ? 'bg-black dark:bg-heading-gold text-white dark:text-black border-black dark:border-heading-gold shadow-[0_15px_30px_rgba(0,0,0,0.2)] dark:shadow-[0_15px_30px_rgba(191,153,6,0.2)]'
                     : 'bg-background dark:bg-neutral-900 text-muted-foreground dark:text-neutral-500 border-border dark:border-neutral-800 hover:bg-accent dark:hover:bg-neutral-800 hover:text-foreground dark:hover:text-neutral-300'
@@ -172,26 +172,26 @@ export function CartScreen() {
       <div className="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-black/90 backdrop-blur-3xl border-t border-border/30 dark:border-neutral-900 shadow-[0_-30px_80px_rgba(0,0,0,0.15)] px-10 py-10 z-50 transition-all duration-700 rounded-t-[55px]">
         <div className="space-y-4 mb-8">
           <div className="flex items-center justify-between opacity-70">
-            <span className="text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.2em] text-[10px] italic">Internal Net Sum</span>
-            <span className="font-black text-foreground dark:text-white text-lg tracking-tighter italic">€{total.toFixed(2)}</span>
+            <span className="text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.2em] text-[10px] ">Internal Net Sum</span>
+            <span className="font-black text-foreground dark:text-white text-lg tracking-tighter ">€{total.toFixed(2)}</span>
           </div>
           <div className="flex items-center justify-between pb-6 border-b border-border/10 dark:border-neutral-800 opacity-70">
-            <span className="text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.2em] text-[10px] italic">Protocol Fee</span>
-            <span className="font-black text-emerald-600 dark:text-heading-gold text-[10px] italic tracking-[0.4em] uppercase transition-colors animate-pulse">Wave Waived</span>
+            <span className="text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.2em] text-[10px] ">Protocol Fee</span>
+            <span className="font-black text-emerald-600 dark:text-heading-gold text-[10px]  tracking-[0.4em] uppercase transition-colors animate-pulse">Wave Waived</span>
           </div>
           <div className="flex items-center justify-between pt-4">
             <div>
-               <span className="block font-black text-foreground dark:text-white text-2xl tracking-tighter uppercase italic transition-colors leading-none mb-1">Hub Final</span>
-               <span className="block text-[8px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-[0.4em] italic opacity-60">Execution Value</span>
+               <span className="block font-black text-foreground dark:text-white text-2xl tracking-tighter uppercase  transition-colors leading-none mb-1">Hub Final</span>
+               <span className="block text-[8px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-[0.4em]  opacity-60">Execution Value</span>
             </div>
             <div className="text-right">
-               <span className="block font-black text-5xl text-emerald-600 dark:text-heading-gold tracking-tighter italic transition-colors drop-shadow-sm">€{total.toFixed(2)}</span>
+               <span className="block font-black text-5xl text-emerald-600 dark:text-heading-gold tracking-tighter  transition-colors drop-shadow-sm">€{total.toFixed(2)}</span>
             </div>
           </div>
         </div>
         <Button
           onClick={() => navigate('/checkout')}
-          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black text-xl font-black rounded-[35px] shadow-2xl active:scale-95 transition-all group uppercase tracking-[0.3em] border-2 border-white/5 italic shadow-black/20"
+          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black text-xl font-black rounded-[35px] shadow-2xl active:scale-95 transition-all group uppercase tracking-[0.3em] border-2 border-white/5  shadow-black/20"
         >
           <span className="flex items-center justify-center gap-6 w-full px-6">
             Execute Checkout

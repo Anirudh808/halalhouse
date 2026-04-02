@@ -21,7 +21,7 @@ export function LoyaltyScreen() {
             <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
           </button>
           <div>
-            <h1 className="text-2xl font-black tracking-tighter uppercase italic">Legacy Status</h1>
+            <h1 className="text-2xl font-black tracking-tighter uppercase ">Legacy Status</h1>
             <p className="text-muted-foreground dark:text-muted-foreground text-[10px] font-black uppercase tracking-[0.2em] opacity-80 transition-colors">Premium Loyalty Ledger</p>
           </div>
         </div>
@@ -37,12 +37,12 @@ export function LoyaltyScreen() {
           <div className="bg-white/5 dark:bg-heading-gold/10 backdrop-blur-3xl rounded-[30px] p-8 w-fit mx-auto mb-8 shadow-2xl border border-white/10 dark:border-heading-gold/20 animate-in zoom-in duration-700 hover:rotate-6 transition-transform">
             <Award className="w-16 h-16 text-heading-gold drop-shadow-[0_10px_20px_rgba(191,153,6,0.5)]" />
           </div>
-          <p className="text-muted-foreground dark:text-muted-foreground font-black text-xs uppercase tracking-[0.4em] mb-4 opacity-80 italic">Accumulated Integrity Points</p>
+          <p className="text-muted-foreground dark:text-muted-foreground font-black text-xs uppercase tracking-[0.4em] mb-4 opacity-80 ">Accumulated Integrity Points</p>
           <div className="flex items-center justify-center gap-1 mb-8">
             <p className="text-8xl font-black text-white dark:text-heading-gold tracking-tight transition-colors">{currentUser.points}</p>
           </div>
           <div className="flex justify-center">
-             <Badge className="bg-heading-gold text-black font-black px-8 py-3 rounded-2xl uppercase tracking-[0.2em] shadow-[0_20px_40px_rgba(191,153,6,0.3)] border-none hover:bg-yellow-400 transition-all active:scale-95 italic">
+             <Badge className="bg-heading-gold text-black font-black px-8 py-3 rounded-2xl uppercase tracking-[0.2em] shadow-[0_20px_40px_rgba(191,153,6,0.3)] border-none hover:bg-yellow-400 transition-all active:scale-95 ">
                 <Star className="w-4 h-4 mr-3 fill-black animate-pulse" />
                 Sovereign Elite
              </Badge>
@@ -59,7 +59,7 @@ export function LoyaltyScreen() {
                  <Gift className="w-7 h-7" />
               </div>
               <div>
-                <h3 className="font-black text-foreground dark:text-white text-xl tracking-tighter uppercase italic">Status Evolution</h3>
+                <h3 className="font-black text-foreground dark:text-white text-xl tracking-tighter uppercase ">Status Evolution</h3>
                 <p className="text-[10px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-widest opacity-60">Next Tier Horizon</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ export function LoyaltyScreen() {
             <div className="flex items-start gap-4 bg-emerald-50 dark:bg-neutral-900/50 p-6 rounded-[30px] border border-emerald-100 dark:border-neutral-800 transition-colors">
               <Zap className="w-5 h-5 text-emerald-600 dark:text-heading-gold flex-shrink-0 mt-1 animate-bounce" />
               <p className="text-xs text-muted-foreground dark:text-neutral-400 font-bold leading-relaxed">
-                Unlock your premium legacy reward in <span className="text-emerald-700 dark:text-heading-gold text-2xl font-black italic tracking-tighter">{pointsNeededForReward - (currentUser.points % pointsNeededForReward)}</span> precise movements.
+                Unlock your premium legacy reward in <span className="text-emerald-700 dark:text-heading-gold text-2xl font-black  tracking-tighter">{pointsNeededForReward - (currentUser.points % pointsNeededForReward)}</span> precise movements.
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function LoyaltyScreen() {
 
       {/* Privileges Grid */}
       <div className="px-6 pb-12">
-        <h3 className="font-black text-foreground dark:text-heading-gold text-[10px] uppercase tracking-[0.4em] mb-8 ml-6 opacity-60 italic">Strategic Privileges</h3>
+        <h3 className="font-black text-foreground dark:text-heading-gold text-[10px] uppercase tracking-[0.4em] mb-8 ml-6 opacity-60 ">Strategic Privileges</h3>
         <div className="grid grid-cols-1 gap-5">
           {[
             { icon: TrendingUp, title: "Velocity", desc: "1.0x Integrity Multiplier", color: "emerald", darkColor: "heading-gold" },
@@ -104,7 +104,7 @@ export function LoyaltyScreen() {
                   <item.icon className="w-7 h-7 text-emerald-600 dark:text-heading-gold transition-colors" />
                 </div>
                 <div>
-                  <h4 className="font-black text-foreground dark:text-white text-lg tracking-tighter uppercase italic transition-colors">{item.title}</h4>
+                  <h4 className="font-black text-foreground dark:text-white text-lg tracking-tighter uppercase  transition-colors">{item.title}</h4>
                   <p className="text-[10px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.2em] opacity-60">{item.desc}</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export function LoyaltyScreen() {
                <History className="w-6 h-6 text-muted-foreground dark:text-heading-gold" />
              </div>
              <div>
-               <h3 className="font-black text-foreground dark:text-white text-xl tracking-tighter uppercase italic">Integrity Ledger</h3>
+               <h3 className="font-black text-foreground dark:text-white text-xl tracking-tighter uppercase ">Integrity Ledger</h3>
                <p className="text-[10px] text-muted-foreground dark:text-muted-foreground font-black uppercase tracking-widest opacity-60">Verified Transaction Logs</p>
              </div>
           </div>
@@ -133,7 +133,7 @@ export function LoyaltyScreen() {
                 <div className="flex items-center gap-5">
                    <div className="w-1.5 h-10 bg-emerald-600/10 dark:bg-heading-gold/10 rounded-full group-hover:bg-emerald-600 dark:group-hover:bg-heading-gold transition-all duration-300"></div>
                    <div>
-                     <p className="font-black text-foreground dark:text-neutral-300 text-sm tracking-tighter uppercase italic transition-colors">{transaction.description}</p>
+                     <p className="font-black text-foreground dark:text-neutral-300 text-sm tracking-tighter uppercase  transition-colors">{transaction.description}</p>
                      <p className="text-[9px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-widest mt-1.5 opacity-60">
                        {new Date(transaction.date).toLocaleDateString('en-GB', {
                          day: 'numeric',
@@ -148,13 +148,13 @@ export function LoyaltyScreen() {
                     <span className="text-[10px] font-black text-emerald-600 dark:text-heading-gold">+</span>
                     <span className="font-black text-emerald-700 dark:text-heading-gold text-2xl tracking-tighter transition-colors">{transaction.points}</span>
                   </div>
-                  <p className="text-[8px] text-muted-foreground dark:text-neutral-700 font-black uppercase tracking-tighter leading-none italic opacity-50">PTS</p>
+                  <p className="text-[8px] text-muted-foreground dark:text-neutral-700 font-black uppercase tracking-tighter leading-none  opacity-50">PTS</p>
                 </div>
               </div>
             ))}
           </div>
           
-          <button className="w-full mt-12 py-5 border-2 border-dashed border-border/50 dark:border-neutral-800 rounded-[28px] text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.3em] hover:bg-accent dark:hover:bg-neutral-900/50 hover:border-emerald-500 dark:hover:border-heading-gold transition-all active:scale-95 italic">
+          <button className="w-full mt-12 py-5 border-2 border-dashed border-border/50 dark:border-neutral-800 rounded-[28px] text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.3em] hover:bg-accent dark:hover:bg-neutral-900/50 hover:border-emerald-500 dark:hover:border-heading-gold transition-all active:scale-95 ">
              Expand Audit History
           </button>
         </div>

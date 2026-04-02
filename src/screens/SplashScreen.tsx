@@ -33,8 +33,8 @@ export function SplashScreen() {
           </div>
         </div>
         
-        <h1 className="text-5xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">
-          HalalHouse
+        <h1 className="text-5xl font-bold text-heading-gold mb-4 tracking-tight drop-shadow-lg">
+          Halal House
         </h1>
         
         <div className="space-y-3 mt-10">

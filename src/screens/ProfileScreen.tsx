@@ -96,7 +96,7 @@ export function ProfileScreen() {
         <Button
           onClick={handleLogout}
           variant="outline"
-          className="w-full h-16 border-2 border-red-500/20 dark:border-heading-gold/10 text-red-600 dark:text-heading-gold hover:bg-red-50 dark:hover:bg-heading-gold/5 font-black rounded-[28px] transition-all active:scale-95 flex items-center justify-center gap-4 uppercase tracking-[0.3em] shadow-sm italic"
+          className="w-full h-16 border-2 border-red-500/20 dark:border-heading-gold/10 text-red-600 dark:text-heading-gold hover:bg-red-50 dark:hover:bg-heading-gold/5 font-black rounded-[28px] transition-all active:scale-95 flex items-center justify-center gap-4 uppercase tracking-[0.3em] shadow-sm "
         >
           <LogOut className="w-5 h-5" />
           Terminate Session

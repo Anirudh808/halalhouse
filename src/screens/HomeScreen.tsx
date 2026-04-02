@@ -15,7 +15,7 @@ export function HomeScreen() {
         <div className="relative z-10">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-4xl font-black tracking-tight dark:text-heading-gold transition-colors duration-300">HalalHouse</h1>
+              <h1 className="text-4xl font-black tracking-tight dark:text-heading-gold transition-colors duration-300">Halal House</h1>
               <p className="text-emerald-100 dark:text-muted-foreground text-xs font-bold uppercase tracking-[0.2em] mt-1 transition-colors duration-300">Tánger Operations</p>
             </div>
             <button
