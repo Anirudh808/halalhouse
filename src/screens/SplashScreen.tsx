@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import logo from '../assets/Halalhouse-logo.png';
+import { halalBanner } from '../data/images';
 
 export function SplashScreen() {
   useEffect(() => {
@@ -12,12 +13,12 @@ export function SplashScreen() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("https://dev.futbolsinfronteras.tv/img/halalhouse/halalh-banner-img-1.png")',
+          backgroundImage: `url(${halalBanner})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] transition-colors duration-300 dark:bg-black"></div>
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] transition-colors duration-300 dark:bg-black/60"></div>
       </div>
 
       <div className="relative z-10 text-center px-6">
@@ -40,7 +41,7 @@ export function SplashScreen() {
           <p className="text-white/90 text-xl font-light transform transition-all duration-500 delay-100 hover:scale-105">Eat it fresh.</p>
           <p className="text-white/90 text-xl font-light transform transition-all duration-500 delay-200 hover:scale-105">Buy it packaged.</p>
           <div className="pt-4">
-            <span className="bg-heading-gold backdrop-blur-md px-6 py-2 rounded-full border border-white/10 text-black font-black text-lg shadow-2xl uppercase tracking-[0.2em] italic">
+            <span className="bg-heading-gold backdrop-blur-md px-6 py-2 rounded-full border border-white/10 text-black font-black text-lg shadow-2xl uppercase tracking-[0.2em]">
               Verify it halal.
             </span>
           </div>

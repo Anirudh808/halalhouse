@@ -42,7 +42,7 @@ export function HomeScreen() {
             </div>
             <button
               onClick={() => navigate('/loyalty')}
-              className="bg-white dark:bg-heading-gold text-emerald-600 dark:text-black text-[10px] font-black px-5 py-2.5 rounded-full hover:scale-105 transition-all duration-300 active:scale-95 shadow-lg uppercase tracking-widest"
+              className="bg-white dark:bg-heading-gold text-emerald-600 dark:text-black text-[8px] font-black px-4 py-2 rounded-full hover:scale-105 transition-all duration-300 active:scale-95 shadow-lg uppercase tracking-widest"
             >
               Transfer →
             </button>

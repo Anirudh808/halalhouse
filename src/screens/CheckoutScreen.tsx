@@ -135,7 +135,7 @@ export function CheckoutScreen() {
         </div>
         <Button
           onClick={handleConfirmOrder}
-          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black text-xl font-black rounded-[35px] shadow-2xl active:scale-95 transition-all flex items-center justify-center gap-6 group uppercase tracking-[0.3em] border-2 border-white/5 italic shadow-black/20"
+          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black text-md font-black rounded-[35px] shadow-2xl active:scale-95 transition-all flex items-center justify-center gap-6 group uppercase tracking-[0.1em] border-2 border-white/5 italic shadow-black/20"
         >
           Confirm Execution
           <div className="w-12 h-12 rounded-[22px] bg-white/20 dark:bg-black/20 flex items-center justify-center group-hover:rotate-12 transition-transform border border-white/10 dark:border-black/5">

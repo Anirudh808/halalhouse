@@ -30,7 +30,7 @@ export function RestaurantMenuScreen() {
               <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
             </button>
             <div>
-              <h1 className="text-2xl font-black tracking-tighter uppercase italic">Fresh Hub</h1>
+              <h1 className="text-2xl font-black tracking-tighter uppercase">Fresh Hub</h1>
               <div className="flex items-center gap-2 opacity-60">
                 <Clock className="w-3.5 h-3.5 text-emerald-600 dark:text-heading-gold" />
                 <p className="text-[10px] font-black uppercase tracking-[0.2em]">Tánger Selection</p>
@@ -107,7 +107,7 @@ export function RestaurantMenuScreen() {
               
               <div className="px-8 py-8 flex flex-col gap-6">
                 <div>
-                  <h3 className="font-black text-xl text-foreground dark:text-heading-gold tracking-tighter uppercase italic transition-colors duration-300 mb-2 truncate">{product.name}</h3>
+                  <h3 className="font-black text-xl text-foreground dark:text-heading-gold tracking-tighter uppercase transition-colors duration-300 mb-2 truncate">{product.name}</h3>
                   <p className="text-muted-foreground dark:text-muted-foreground text-xs leading-relaxed line-clamp-2 font-medium opacity-70">
                     {product.ingredients.join(' • ')}
                   </p>
@@ -115,7 +115,7 @@ export function RestaurantMenuScreen() {
 
                 <Button
                   onClick={() => addToRestaurantCart(product)}
-                  className="w-full h-16 bg-emerald-600 hover:bg-emerald-700 dark:bg-heading-gold dark:hover:bg-heading-gold/80 text-white dark:text-black text-xs font-black rounded-[28px] shadow-2xl active:scale-95 transition-all px-6 uppercase tracking-[0.3em] border-2 border-white/10 dark:border-black/10 italic shadow-emerald-500/10 dark:shadow-heading-gold/10"
+                  className="w-full h-16 bg-emerald-600 hover:bg-emerald-700 dark:bg-heading-gold dark:hover:bg-heading-gold/80 text-white dark:text-black text-xs font-black rounded-[28px] shadow-2xl active:scale-95 transition-all px-6 uppercase tracking-[0.3em] border-2 border-white/10 dark:border-black/10 shadow-emerald-500/10 dark:shadow-heading-gold/10"
                 >
                   <Plus className="w-5 h-5 mr-3" />
                   Add to Cart

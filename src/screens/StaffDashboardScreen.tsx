@@ -31,7 +31,7 @@ function OrderCard({ order, onStartPreparing, onMarkReady }: OrderCardProps) {
         <div>
           <div className="flex items-center gap-3 mb-2">
              <div className={`w-3 h-3 rounded-full ${statusColors[order.status]} animate-pulse shadow-sm`}></div>
-             <p className="font-black text-foreground dark:text-heading-gold text-2xl tracking-tighter uppercase italic">{order.id}</p>
+             <p className="font-black text-foreground dark:text-heading-gold text-2xl tracking-tighter uppercase">{order.id}</p>
           </div>
           <div className="flex items-center gap-2 opacity-60">
             <Clock className="w-4 h-4 text-muted-foreground dark:text-neutral-500" />
@@ -83,7 +83,7 @@ function OrderCard({ order, onStartPreparing, onMarkReady }: OrderCardProps) {
           </Button>
         )}
         {order.status === "ready" && (
-          <div className="bg-emerald-50 dark:bg-heading-gold/10 border-2 border-emerald-500/30 dark:border-heading-gold/30 rounded-2xl p-5 flex items-center justify-center gap-4 text-emerald-600 dark:text-heading-gold font-black text-[12px] uppercase tracking-[0.3em] shadow-inner italic">
+          <div className="bg-emerald-50 dark:bg-heading-gold/10 border-2 border-emerald-500/30 dark:border-heading-gold/30 rounded-2xl p-5 flex items-center justify-center gap-4 text-emerald-600 dark:text-heading-gold font-black text-[12px] uppercase tracking-[0.3em] shadow-inner">
             <CheckCircle2 className="w-6 h-6 animate-pulse" />
             Awaiting Collection
           </div>
@@ -126,7 +126,7 @@ export function StaffDashboardScreen() {
                  <Badge className="bg-white/10 dark:bg-heading-gold/20 text-white dark:text-heading-gold border border-white/20 dark:border-heading-gold/30 text-[9px] font-black uppercase tracking-[0.3em] px-3 py-1 rounded-lg backdrop-blur-md">Tactical Hub</Badge>
                  <Sparkles className="w-4 h-4 text-yellow-400 animate-pulse" />
               </div>
-              <h1 className="text-5xl font-black tracking-tighter leading-none mb-2 uppercase italic transition-colors dark:text-heading-gold">
+              <h1 className="text-5xl font-black tracking-tighter leading-none mb-2 uppercase transition-colors dark:text-heading-gold">
                 Tánger Command
               </h1>
               <p className="text-emerald-100/70 dark:text-muted-foreground text-[10px] font-black uppercase tracking-[0.4em] font-mono opacity-80 transition-colors">Real-Time Operational Stream</p>
@@ -185,7 +185,7 @@ export function StaffDashboardScreen() {
               <div className="bg-blue-600/10 dark:bg-blue-500/10 text-blue-600 dark:text-blue-500 p-3 rounded-[18px]">
                  <AlertCircle className="w-6 h-6" />
               </div>
-              <h2 className="text-sm font-black text-foreground dark:text-white uppercase tracking-[0.4em] italic transition-colors">Operational Queue</h2>
+              <h2 className="text-sm font-black text-foreground dark:text-white uppercase tracking-[0.4em] transition-colors">Operational Queue</h2>
            </div>
            <p className="text-[10px] font-black text-muted-foreground dark:text-neutral-600 uppercase tracking-widest">{orders.length} Active</p>
         </div>
@@ -207,7 +207,7 @@ export function StaffDashboardScreen() {
               <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-heading-gold" />
            </div>
            <div>
-              <h4 className="font-black text-foreground dark:text-white text-xl tracking-tight uppercase italic mb-1 transition-colors">Blockchain integrity active</h4>
+              <h4 className="font-black text-foreground dark:text-white text-xl tracking-tight uppercase mb-1 transition-colors">Blockchain integrity active</h4>
               <p className="text-xs text-muted-foreground dark:text-neutral-500 font-bold leading-relaxed transition-colors opacity-80">Operational metrics are synchronized across all nodes. Halal pedigree compliance is verified for this session.</p>
            </div>
         </div>

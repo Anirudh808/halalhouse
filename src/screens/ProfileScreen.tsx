@@ -39,7 +39,7 @@ export function ProfileScreen() {
             </div>
           </div>
           <div className="flex-1 min-w-0">
-            <h1 className="text-4xl font-black text-white dark:text-heading-gold tracking-tighter leading-tight mb-2 truncate italic uppercase transition-colors">{currentUser.name}</h1>
+            <h1 className="text-4xl font-black text-white dark:text-heading-gold tracking-tighter leading-tight mb-2 truncate uppercase transition-colors">{currentUser.name}</h1>
             <p className="text-emerald-100 dark:text-muted-foreground font-bold opacity-80 flex items-center gap-2 mt-1 transition-colors">
                <Mail className="w-4 h-4 opacity-70" />
                <span className="text-sm truncate lowercase tracking-tight">{currentUser.email}</span>
@@ -68,7 +68,7 @@ export function ProfileScreen() {
 
       {/* Menu List */}
       <div className="px-8 space-y-4">
-        <h3 className="font-black text-foreground dark:text-heading-gold text-[10px] uppercase tracking-[0.4em] mb-6 ml-4 opacity-60 italic">Strategic Hub</h3>
+        <h3 className="font-black text-foreground dark:text-heading-gold text-[10px] uppercase tracking-[0.4em] mb-6 ml-4 opacity-60">Strategic Hub</h3>
         <div className="grid grid-cols-1 gap-4">
           {menuItems.map((item, i) => (
             <button
@@ -81,7 +81,7 @@ export function ProfileScreen() {
                   <item.icon className={`w-6 h-6 ${item.color} dark:text-heading-gold`} />
                 </div>
                 <div className="text-left">
-                  <p className="font-black text-foreground dark:text-white text-lg tracking-tighter uppercase italic transition-colors leading-none mb-1">{item.label}</p>
+                  <p className="font-black text-foreground dark:text-white text-lg tracking-tighter uppercase transition-colors leading-none mb-1">{item.label}</p>
                   <p className="text-[10px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-widest opacity-80">{item.sub}</p>
                 </div>
               </div>

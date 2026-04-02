@@ -28,7 +28,7 @@ export function ScanQRScreen() {
             <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
           </button>
           <div>
-            <h1 className="text-2xl font-black tracking-tighter uppercase italic text-foreground dark:text-heading-gold">Audit Scanner</h1>
+            <h1 className="text-2xl font-black tracking-tighter uppercase text-foreground dark:text-heading-gold">Audit Scanner</h1>
             <p className="text-muted-foreground dark:text-muted-foreground text-[10px] font-black uppercase tracking-[0.2em] opacity-80 transition-colors">Protocol Verification Hub</p>
           </div>
         </div>
@@ -44,8 +44,8 @@ export function ScanQRScreen() {
                 <QrCode className="w-28 h-28 text-emerald-600 dark:text-heading-gold drop-shadow-2xl transition-transform group-hover:rotate-12" />
               </div>
             </div>
-            <h2 className="text-foreground dark:text-white text-4xl font-black mb-6 tracking-tighter uppercase italic transition-colors">Trust Verification</h2>
-            <p className="text-muted-foreground dark:text-muted-foreground mb-12 max-w-[300px] mx-auto font-bold leading-relaxed italic opacity-80 uppercase text-[10px] tracking-widest">
+            <h2 className="text-foreground dark:text-white text-4xl font-black mb-6 tracking-tighter uppercase transition-colors">Trust Verification</h2>
+            <p className="text-muted-foreground dark:text-muted-foreground mb-12 max-w-[300px] mx-auto font-bold leading-relaxed opacity-80 uppercase text-[10px] tracking-widest">
               Scan the unique audit protocol on any product to synchronize its full certification pedigree with the blockchain.
             </p>
             <Button
@@ -77,7 +77,7 @@ export function ScanQRScreen() {
             <QrCode className="w-48 h-48 text-emerald-500/10 dark:text-heading-gold/10 animate-pulse transition-colors" />
             
             <div className="absolute -bottom-32 left-0 right-0 text-center animate-bounce">
-              <p className="text-emerald-500 dark:text-heading-gold font-black tracking-[0.4em] text-[10px] uppercase mb-3 italic transition-colors">Protocol Locked • Processing</p>
+              <p className="text-emerald-500 dark:text-heading-gold font-black tracking-[0.4em] text-[10px] uppercase mb-3 transition-colors">Protocol Locked • Processing</p>
               <div className="flex justify-center gap-2">
                  <div className="w-2 h-2 bg-emerald-500 dark:bg-heading-gold rounded-full animate-ping"></div>
                  <div className="w-2 h-2 bg-emerald-500 dark:bg-heading-gold rounded-full animate-ping delay-150"></div>
@@ -96,7 +96,7 @@ export function ScanQRScreen() {
                <Info className="w-6 h-6" />
              </div>
              <div>
-               <h3 className="text-foreground dark:text-white font-black text-xl tracking-tighter uppercase italic transition-colors">Verification Sequence</h3>
+               <h3 className="text-foreground dark:text-white font-black text-xl tracking-tighter uppercase transition-colors">Verification Sequence</h3>
                <p className="text-[9px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-widest opacity-60">Audit Intelligence Process</p>
              </div>
           </div>

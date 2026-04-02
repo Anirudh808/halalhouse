@@ -26,7 +26,7 @@ export function StoreCatalogScreen() {
             <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
           </button>
           <div>
-            <h1 className="text-2xl font-black tracking-tighter uppercase italic">Market Hub</h1>
+            <h1 className="text-2xl font-black tracking-tighter uppercase">Market Hub</h1>
             <p className="text-muted-foreground dark:text-muted-foreground text-[10px] font-black uppercase tracking-[0.2em] opacity-80">Premium Packaged Selections</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export function StoreCatalogScreen() {
           </div>
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <p className="text-sm font-black text-emerald-900 dark:text-white tracking-widest uppercase italic">In-Store Collection</p>
+              <p className="text-sm font-black text-emerald-900 dark:text-white tracking-widest uppercase">In-Store Collection</p>
               <Sparkles className="w-3.5 h-3.5 text-yellow-500 animate-pulse" />
             </div>
             <p className="text-xs text-muted-foreground dark:text-muted-foreground leading-relaxed font-medium">

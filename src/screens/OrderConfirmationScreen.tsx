@@ -32,8 +32,8 @@ export function OrderConfirmationScreen() {
           </div>
         </div>
 
-        <h1 className="text-5xl font-black text-white mb-3 tracking-tighter uppercase italic drop-shadow-2xl transition-colors">Protocol Locked</h1>
-        <p className="text-emerald-300 dark:text-heading-gold font-black mb-12 opacity-90 uppercase tracking-[0.3em] text-xs italic transition-colors">
+        <h1 className="text-5xl font-black text-white mb-3 tracking-tighter uppercase drop-shadow-2xl transition-colors">Protocol Locked</h1>
+        <p className="text-emerald-300 dark:text-heading-gold font-black mb-12 opacity-90 uppercase tracking-[0.3em] text-xs transition-colors">
           Synthesis Initialized • Prepare For Receipt
         </p>
 
@@ -41,7 +41,7 @@ export function OrderConfirmationScreen() {
         <div className="w-full max-w-md bg-card dark:bg-neutral-950 rounded-[50px] shadow-[0_40px_80px_rgba(0,0,0,0.3)] p-12 mb-10 border border-border/50 dark:border-neutral-900 animate-in slide-in-from-bottom-12 duration-1000 transition-all">
           <div className="text-center mb-10 pb-10 border-b border-border/30 dark:border-neutral-900">
             <p className="text-[10px] text-muted-foreground dark:text-muted-foreground font-black uppercase tracking-[0.4em] mb-4 opacity-60">Fulfillment Token</p>
-            <p className="text-5xl font-black text-emerald-600 dark:text-heading-gold tracking-tighter italic transition-colors animate-pulse">{orderId}</p>
+            <p className="text-5xl font-black text-emerald-600 dark:text-heading-gold tracking-tighter transition-colors animate-pulse">{orderId}</p>
           </div>
 
           <div className="space-y-8">
@@ -50,7 +50,7 @@ export function OrderConfirmationScreen() {
                 <Clock className="w-7 h-7 text-emerald-600 dark:text-heading-gold" />
               </div>
               <div className="flex-1 text-left">
-                <p className="font-black text-foreground dark:text-white text-[11px] uppercase tracking-[0.3em] mb-1 transition-colors italic">Synthesis Window</p>
+                <p className="font-black text-foreground dark:text-white text-[11px] uppercase tracking-[0.3em] mb-1 transition-colors">Synthesis Window</p>
                 <p className="text-xs text-muted-foreground dark:text-neutral-500 font-black tracking-widest uppercase opacity-80 transition-colors">20 Minutes</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ export function OrderConfirmationScreen() {
                 <MapPin className="w-7 h-7 text-emerald-600 dark:text-heading-gold" />
               </div>
               <div className="flex-1 text-left">
-                <p className="font-black text-foreground dark:text-white text-[11px] uppercase tracking-[0.3em] mb-1 transition-colors italic">Node Location</p>
+                <p className="font-black text-foreground dark:text-white text-[11px] uppercase tracking-[0.3em] mb-1 transition-colors">Node Location</p>
                 <p className="text-[11px] text-muted-foreground dark:text-muted-foreground font-bold uppercase tracking-widest leading-relaxed opacity-80 transition-colors">
                   HalalHouse Tánger Hub
                 </p>
@@ -71,7 +71,7 @@ export function OrderConfirmationScreen() {
           <div className="mt-10 pt-10 border-t border-dashed border-border/30 dark:border-neutral-900">
             <div className="bg-yellow-50/50 dark:bg-heading-gold/5 rounded-[30px] p-6 text-left border border-yellow-200/50 dark:border-heading-gold/10 transition-colors shadow-inner">
               <p className="text-sm text-yellow-800 dark:text-neutral-400 font-bold transition-colors">
-                <span className="font-black flex items-center gap-3 mb-2 uppercase text-[9px] tracking-[0.4em] text-yellow-700 dark:text-heading-gold italic">
+                <span className="font-black flex items-center gap-3 mb-2 uppercase text-[9px] tracking-[0.4em] text-yellow-700 dark:text-heading-gold">
                   <Sparkles className="w-4 h-4 animate-spin-slow" /> Loyalty Yield
                 </span>
                 Net weight acquired: <span className="font-black text-yellow-900 dark:text-white">20 points</span>. Protocol balance verified.
@@ -82,7 +82,7 @@ export function OrderConfirmationScreen() {
 
         {/* Status Badge */}
         <div className="bg-black dark:bg-neutral-950 text-emerald-500 dark:text-heading-gold px-10 py-4 rounded-2xl mb-12 border border-white/5 dark:border-neutral-900 transition-all shadow-2xl">
-          <p className="font-black uppercase text-[10px] tracking-[0.4em] italic animate-pulse">Status: Culinary Synthesis Active 👨‍🍳</p>
+          <p className="font-black uppercase text-[10px] tracking-[0.4em] animate-pulse">Status: Culinary Synthesis Active 👨‍🍳</p>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ export function OrderConfirmationScreen() {
       <div className="px-10 pb-16 space-y-5 relative z-10">
         <Button
           onClick={() => navigate('/orders')}
-          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black font-black rounded-[35px] shadow-2xl active:scale-95 transition-all flex items-center justify-center gap-4 uppercase tracking-[0.3em] border-2 border-white/5 italic text-lg shadow-black/20"
+          className="w-full h-20 bg-black dark:bg-heading-gold hover:bg-neutral-900 dark:hover:bg-heading-gold/80 text-white dark:text-black font-black rounded-[35px] shadow-2xl active:scale-95 transition-all flex items-center justify-center gap-4 uppercase tracking-[0.1em] border-2 border-white/5 text-md shadow-black/20"
         >
           <ListOrdered className="w-6 h-6 transition-transform group-hover:scale-110" />
           Review Orders
@@ -98,7 +98,7 @@ export function OrderConfirmationScreen() {
         <Button
           onClick={() => navigate('/home')}
           variant="outline"
-          className="w-full h-18 border-2 border-border/50 dark:border-neutral-800 text-foreground dark:text-neutral-500 hover:bg-accent dark:hover:bg-neutral-900/50 font-black rounded-[35px] transition-all active:scale-95 flex items-center justify-center gap-4 uppercase tracking-[0.3em] italic text-sm"
+          className="w-full h-18 border-2 border-border/50 dark:border-neutral-800 text-foreground dark:text-neutral-500 hover:bg-accent dark:hover:bg-neutral-900/50 font-black rounded-[35px] transition-all active:scale-95 flex items-center justify-center gap-4 uppercase tracking-[0.1em] text-md"
         >
           <Home className="w-6 h-6 transition-transform group-hover:-translate-y-1" />
           Return to Hub
