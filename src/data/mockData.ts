@@ -1,10 +1,15 @@
 // Mock Data for HalalHouse MVP
 
-import { 
-	roastedVegetableSalad, 
-	packed, 
-	traditionalGazpacho, 
-	vegetableMedley 
+import {
+  roastedVegetableSalad,
+  packed,
+  traditionalGazpacho,
+  vegetableMedley,
+  dish14,
+  dish15,
+  dish16,
+  dish17,
+  dish18
 } from "./images";
 
 export interface User {
@@ -86,7 +91,7 @@ export const restaurantProducts: Product[] = [
     type: 'restaurant',
     price: 15.5,
     ingredients: ['Artichokes', 'Prawns', 'Ham', 'Garlic', 'Olive Oil'],
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80',
+    image: dish14,
   },
   {
     id: 'rest-2',
@@ -95,7 +100,7 @@ export const restaurantProducts: Product[] = [
     type: 'restaurant',
     price: 18.0,
     ingredients: ['Ostrich Meat', 'Cheese', 'Herbs'],
-    image: vegetableMedley,
+    image:dish15,
   },
   {
     id: 'rest-3',
@@ -104,7 +109,7 @@ export const restaurantProducts: Product[] = [
     type: 'restaurant',
     price: 16.5,
     ingredients: ['Beef Cheeks', 'Wine', 'Vegetables', 'Spices'],
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&q=80',
+    image: dish15,
   },
   {
     id: 'rest-4',
@@ -113,7 +118,7 @@ export const restaurantProducts: Product[] = [
     type: 'restaurant',
     price: 14.0,
     ingredients: ['Prawns', 'Garlic', 'Olive Oil', 'Parsley'],
-    image: 'https://images.unsplash.com/photo-1559742811-822873691df8?w=500&q=80',
+    image: dish14,
   },
   {
     id: 'rest-5',
@@ -131,7 +136,7 @@ export const restaurantProducts: Product[] = [
     type: 'restaurant',
     price: 17.5,
     ingredients: ['Bull Meat', 'Carrots', 'Potatoes', 'Broth'],
-    image: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&q=80',
+    image: dish18,
   },
   {
     id: 'rest-7',

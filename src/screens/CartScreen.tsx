@@ -32,8 +32,8 @@ export function CartScreen() {
       <div className="min-h-screen bg-background flex flex-col transition-colors duration-300 font-outfit">
         <div className="bg-white/80 dark:bg-black/90 text-foreground dark:text-heading-gold px-6 py-8 shadow-xl backdrop-blur-2xl border-b border-border/50 dark:border-neutral-900 transition-all duration-500 rounded-b-[40px]">
           <div className="flex items-center gap-4">
-            <button 
-              onClick={() => navigate('/restaurant')} 
+            <button
+              onClick={() => navigate('/restaurant')}
               className="bg-accent/50 dark:bg-neutral-900 hover:bg-accent dark:hover:bg-neutral-800 rounded-2xl p-3 transition-all active:scale-95 shadow-sm border border-border/10 dark:border-neutral-800"
             >
               <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
@@ -71,8 +71,8 @@ export function CartScreen() {
       {/* Header */}
       <div className="bg-white/80 dark:bg-black/90 text-foreground dark:text-heading-gold px-6 py-8 sticky top-0 z-40 shadow-xl backdrop-blur-2xl border-b border-border/50 dark:border-neutral-900 transition-all duration-500 rounded-b-[40px]">
         <div className="flex items-center gap-4">
-          <button 
-            onClick={() => navigate('/home')} 
+          <button
+            onClick={() => navigate('/home')}
             className="bg-accent/50 dark:bg-neutral-900 hover:bg-accent dark:hover:bg-neutral-800 rounded-2xl p-3 transition-all active:scale-95 shadow-sm border border-border/10 dark:border-neutral-800"
           >
             <ArrowLeft className="w-6 h-6 text-foreground dark:text-heading-gold" />
@@ -87,8 +87,8 @@ export function CartScreen() {
       {/* Cart Items */}
       <div className="px-6 py-10 space-y-6">
         <div className="flex items-center gap-4 mb-4 ml-4 opacity-70">
-           <div className="h-1 w-10 bg-emerald-600 dark:bg-heading-gold rounded-full"></div>
-           <p className="text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.4em]  transition-colors">Fulfilment Stream</p>
+          <div className="h-1 w-10 bg-emerald-600 dark:bg-heading-gold rounded-full"></div>
+          <p className="text-[10px] font-black text-muted-foreground dark:text-neutral-500 uppercase tracking-[0.4em]  transition-colors">Fulfilment Stream</p>
         </div>
         {restaurantCart.map((item) => (
           <div key={item.product.id} className="bg-card dark:bg-neutral-950 rounded-[40px] p-7 shadow-sm border border-border/50 dark:border-neutral-900 hover:shadow-2xl transition-all duration-500 group">
@@ -146,8 +146,8 @@ export function CartScreen() {
               <Clock className="w-7 h-7 text-emerald-600 dark:text-heading-gold" />
             </div>
             <div>
-               <h3 className="font-black text-foreground dark:text-white tracking-tighter text-xl uppercase  transition-colors">Pickup Schedule</h3>
-               <p className="text-[10px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.3em] opacity-60">Synchronize Protocol</p>
+              <h3 className="font-black text-foreground dark:text-white tracking-tighter text-xl uppercase  transition-colors">Pickup Schedule</h3>
+              <p className="text-[10px] text-muted-foreground dark:text-neutral-500 font-black uppercase tracking-[0.3em] opacity-60">Synchronize Protocol</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -155,11 +155,10 @@ export function CartScreen() {
               <button
                 key={option}
                 onClick={() => setPickupTime(option)}
-                className={`px-6 py-3.5 rounded-[18px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 transform active:scale-95 border  ${
-                  pickupTime === option
+                className={`px-6 py-3.5 rounded-[18px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 transform active:scale-95 border  ${pickupTime === option
                     ? 'bg-black dark:bg-heading-gold text-white dark:text-black border-black dark:border-heading-gold shadow-[0_15px_30px_rgba(0,0,0,0.2)] dark:shadow-[0_15px_30px_rgba(191,153,6,0.2)]'
                     : 'bg-background dark:bg-neutral-900 text-muted-foreground dark:text-neutral-500 border-border dark:border-neutral-800 hover:bg-accent dark:hover:bg-neutral-800 hover:text-foreground dark:hover:text-neutral-300'
-                }`}
+                  }`}
               >
                 {option}
               </button>
@@ -181,11 +180,11 @@ export function CartScreen() {
           </div>
           <div className="flex items-center justify-between pt-4">
             <div>
-               <span className="block font-black text-foreground dark:text-white text-2xl tracking-tighter uppercase  transition-colors leading-none mb-1">Hub Final</span>
-               <span className="block text-[8px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-[0.4em]  opacity-60">Execution Value</span>
+              <span className="block font-black text-foreground dark:text-white text-2xl tracking-tighter uppercase  transition-colors leading-none mb-1">Hub Final</span>
+              <span className="block text-[8px] text-muted-foreground dark:text-neutral-600 font-black uppercase tracking-[0.4em]  opacity-60">Execution Value</span>
             </div>
             <div className="text-right">
-               <span className="block font-black text-5xl text-emerald-600 dark:text-heading-gold tracking-tighter  transition-colors drop-shadow-sm">€{total.toFixed(2)}</span>
+              <span className="block font-black text-5xl text-emerald-600 dark:text-heading-gold tracking-tighter  transition-colors drop-shadow-sm">€{total.toFixed(2)}</span>
             </div>
           </div>
         </div>
@@ -196,7 +195,7 @@ export function CartScreen() {
           <span className="flex items-center justify-center gap-6 w-full px-6">
             Execute Checkout
             <div className="w-12 h-12 rounded-[18px] bg-white/20 dark:bg-black/20 flex items-center justify-center group-hover:translate-x-4 transition-transform border border-white/10 dark:border-black/5">
-               <ArrowLeft className="w-6 h-6 rotate-180" />
+              <ArrowLeft className="w-6 h-6 rotate-180" />
             </div>
           </span>
         </Button>
