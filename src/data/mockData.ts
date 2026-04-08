@@ -4,11 +4,8 @@ import {
   roastedVegetableSalad,
   packed,
   traditionalGazpacho,
-  vegetableMedley,
   dish14,
-  dish15,
-  dish16,
-  dish17,
+  dish15,  
   dish18
 } from "./images";
 
